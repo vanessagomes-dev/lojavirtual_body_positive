@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto Integrador - Site Body Positive</title>
+    <link rel="stylesheet" href="css/estilo.css">
+</head>
+
+<body>
+
+     <!--integração libras -->
+     <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+            <div class="vw-plugin-top-wrapper"></div>
+        </div>
+    </div>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+    </script>
+    <!--fechamento cod integração libras-->
+
+    
+     <!-- INICIO BANNER BODY POSITIVE -->
+     <div class="novomenu">
+        <!-- INICIO CONTAINER -->
+        <div class="container">
+            <!-- INICIO NAVEGAÇÃO TOPO -->
+            <div class="navbar">
+                <div class="logo">
+                    <img src="assets/img/Body (1).svg" alt="Logo Body Positive" width="125px">
+                </div>
+
+                <!-- INICIO MENU DE NAVEGAÇÃO -->
+                <nav>
+                    <ul id="MenuItens">
+                        <li><a href="index.html" title="Inicio">Inicio</a></li>
+                        <li><a href="produtos.html" title="Produtos">Produtos</a></li>
+                        <li><a href="empresa.html" title="Empresa">Empresa</a></li>
+                        <li><a href="contato.html" title="Contato">Contato</a></li>
+                        <li><a href="minha-conta.html" title="Minha Conta">Minha Conta</a></li>
+                    </ul>
+                </nav>
+                <!-- FIM MENU DE NAVEGAÇÃO -->
+
+                <a href="carrinho.html" title="carrinho">
+                <img src="assets/img/carrinho2.png" alt="Carrinho de Compras" width="30px" height="30px">
+                </a>
+
+                <img src="assets/img/menu.png" alt="Menu Celular" class="menu-celular" onclick="menucelular()">
+            </div>
+            <!-- FIM NAVEGAÇÃO TOPO -->
+        </div>
+        <!-- FIM CONTAINER -->
+    </div>
+
+
+    <!-- INICIO MINHA CONTA -->
+    <div class="minha-conta">
+
+        <div class="container">
+            <div class="linha">
+
+                <div class="col-2">
+                    <img src="assets/img/banner-minhaconta.png" alt="banner" width="100%">
+                </div>
+
+
+                <div class="col-2">
+                    <div class="formulario">
+                        <div class="btn-form">
+                            <span onclick="Entrar()">Entrar</span>
+                            <span onclick="Cadastro()">Cadastro</span>
+                            <hr id="Indicador">
+                        </div>
+
+                        <form action="" method="post" id="EntrarPainel">
+                            <input type="email" name="email" id="" placeholder="E-mail de acesso">
+                            <input type="password" name="senha" id="" placeholder="Digite sua senha">
+                            <button type="submit" name="sendEntrar" class="btn">Entrar</button>
+                            <a href="#" title="esqueci minha senha">Esqueci minha senha</a>
+                        </form>
+                    
+
+                        <form action="" method="post" id="CadastroSite">
+                            <input type="text" name="nome completo" id="" placeholder="Nome Completo">
+                            <input type="email" name="email" id="" placeholder="E-mail de acesso">
+                            <input type="password" name="senha" id="" placeholder="Digite sua senha">
+                            <button type="submit" name="sendCad" class="btn">Cadastre-se</button>
+                        </form>
+
+                    </div>
+                   </div>
+            </div>
+        </div>
+    </div>
+    <!-- FIM MINHA CONTA -->
+
+   
+
+
+    <!-- INICIO RODAPE -->
+<footer class="rodape">
+    <div class="container">
+        <div class="linha">
+            <div class="rodape-col-1">
+                <h3>Baixe o nosso app</h3>
+                <p>Baixe nosso aplicativo nas melhores plataformas</p>
+                <div class="app-logo">
+                    <img src="assets/img/google.png" alt="Google Play">
+                    <img src="assets/img/apple.png" alt="App Store">
+                </div>
+            </div>
+
+            <div class="rodape-col-2">
+                <img src="assets/img/Body (1).svg" alt="Logo 2">
+            </div>
+
+            <div class="rodape-col-3">
+                <h3>Mais Informações</h3>
+                <ul>
+                    <li>Cupons</li>
+                    <li>Blog</li>
+                    <li>Politica de privacidade</li>
+                    <li>Contatos</li>
+                </ul>
+            </div>
+
+            <div class="rodape-col-4">
+                <h3>Redes Sociais</h3>
+                <ul>
+                    <li>Facebook</li>
+                    <li>Instagram</li>
+                    <li>Youtube</li>
+                    <li>Twitter</li>
+                </ul>
+            </div>
+        </div>
+
+        <hr>
+        <p class="direitos">
+            &#169; Todos os direitos reservados a Vanessa Mariano Gomes
+        </p>
+    </div>
+</footer>
+<!-- FIM RODAPE -->
+
+    <!-- FIM RODAPE -->
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="js/login.js"></script>
+</body>
+</html>

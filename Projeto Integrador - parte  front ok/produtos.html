@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto integrador - Site Body Positive</title>
+    <link rel="stylesheet" href="css/estilo.css">
+</head>
+
+<body>
+
+     <!--integração libras -->
+     <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+            <div class="vw-plugin-top-wrapper"></div>
+        </div>
+    </div>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+    </script>
+    <!--fechamento cod integração libras-->
+
+    <!-- INICIO BANNER BODY POSITIVE -->
+    <div class="novomenu">
+        <!-- INICIO CONTAINER -->
+        <div class="container">
+            <!-- INICIO NAVEGAÇÃO TOPO -->
+            <div class="navbar">
+                <div class="logo">
+                    <img src="assets/img/Body (1).svg" alt="Logo Body Positive" width="125px">
+                </div>
+
+                <!-- INICIO MENU DE NAVEGAÇÃO -->
+                <nav>
+                    <ul id="MenuItens">
+                        <li><a href="index.html" title="Inicio">Inicio</a></li>
+                        <li><a href="produtos.html" title="Produtos">Produtos</a></li>
+                        <li><a href="empresa.html" title="Empresa">Empresa</a></li>
+                        <li><a href="contato.html" title="Contato">Contato</a></li>
+                        <li><a href="minha-conta.html" title="Minha Conta">Minha Conta</a></li>
+                    </ul>
+                </nav>
+                <!-- FIM MENU DE NAVEGAÇÃO -->
+
+                <a href="carrinho.html" title="carrinho">
+                <img src="assets/img/carrinho2.png" alt="Carrinho de Compras" width="30px" height="30px">
+                </a>
+                
+                <img src="assets/img/menu.png" alt="Menu Celular" class="menu-celular" onclick="menucelular()">
+            </div>
+            <!-- FIM NAVEGAÇÃO TOPO -->
+        </div>
+        <!-- FIM CONTAINER -->
+    </div>
+
+    <!-- INICIO PRODUTOS -->
+    <div class="corpo-categorias">
+        <div class="linha linha2">
+            <h2>Todos</h2>
+            <select name="filtro" id="filtro">
+                <option value="mais_vendidos">Mais Vendidos</option>
+                <option value="mais_classificados">Mais Classificados</option>
+                <option value="maior_preco">Maior Preço</option>
+                <option value="menor_preco">Menor Preço</option>
+            </select>
+        </div>
+
+        <div class="linha">
+            <div class="col-4">
+                <img src="assets/img/produto-1.png" alt="Produto 1">
+                <h4>Produto 1</h4>
+                <div class="classificacao">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                </div>
+                <p>R$ 0,00</p>
+            </div>
+
+            <div class="col-4">
+                <img src="assets/img/produto-2.png" alt="Produto 2">
+                <h4>Produto 2</h4>
+                <div class="classificacao">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                </div>
+                <p>R$ 0,00</p>
+            </div>
+
+            <div class="col-4">
+                <img src="assets/img/produto-3.png" alt="Produto 3">
+                <h4>Produto 3</h4>
+                <div class="classificacao">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                </div>
+                <p>R$ 0,00</p>
+            </div>
+
+            <div class="col-4">
+                <img src="assets/img/produto-4.png" alt="Produto 4">
+                <h4>Produto 4</h4>
+                <div class="classificacao">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                </div>
+                <p>R$ 0,00</p>
+            </div>
+        </div>
+    
+      <div class="linha">
+        <div class="col-4">
+            <img src="assets/img/produto-5.png" alt="produto-5">
+            <h4>Produto 5</h4>
+            <div class="classificacao">
+                <ion-icon name="star"></ion-icon>
+                <ion-icon name="star"></ion-icon>
+                <ion-icon name="star"></ion-icon>
+                <ion-icon name="star"></ion-icon>
+                <ion-icon name="star"></ion-icon>
+            </div>
+            <p>R$ 0,00</p>
+        </div>
+
+        <div class="col-4">
+            <img src="assets/img/produto-6.png" alt="produto-6">
+            <h4>Produto 6</h4>
+            <div class="classificacao">
+                <ion-icon name="star"></ion-icon>
+                <ion-icon name="star"></ion-icon>
+                <ion-icon name="star"></ion-icon>
+                <ion-icon name="star"></ion-icon>
+                <ion-icon name="star"></ion-icon>
+            </div>
+            <p>R$ 0,00</p>
+        </div>
+
+        <div class="col-4">
+            <img src="assets/img/produto-7.jpg" alt="produto-7">
+            <h4>produto-7</h4>
+            <div class="classificacao">
+                <ion-icon name="star"></ion-icon>
+                <ion-icon name="star"></ion-icon>
+                <ion-icon name="star"></ion-icon>
+                <ion-icon name="star"></ion-icon>
+                <ion-icon name="star"></ion-icon>
+            </div>
+            <p>R$ 0,00</p>
+        </div>
+
+        <div class="col-4">
+            <img src="assets/img/produto-8.jpg" alt="produto-8">
+            <h4>Produto 8</h4>
+            <div class="classificacao">
+                <ion-icon name="star"></ion-icon>
+                <ion-icon name="star"></ion-icon>
+                <ion-icon name="star"></ion-icon>
+                <ion-icon name="star"></ion-icon>
+                <ion-icon name="star"></ion-icon>
+            </div>
+            <p>R$ 0,00</p>
+          </div>
+
+          <div class="col-4">
+            <img src="assets/img/produto-9.jpg" alt="produto-9">
+            <h4>Produto 9</h4>
+            <div class="classificacao">
+                <ion-icon name="star"></ion-icon>
+                <ion-icon name="star"></ion-icon>
+                <ion-icon name="star"></ion-icon>
+                <ion-icon name="star"></ion-icon>
+                <ion-icon name="star"></ion-icon>
+            </div>
+            <p>R$ 0,00</p>
+          </div>
+
+          <div class="col-4">
+            <img src="assets/img/produto-10.jpg" alt="produto-10">
+            <h4>Produto 10</h4>
+            <div class="classificacao">
+                <ion-icon name="star"></ion-icon>
+                <ion-icon name="star"></ion-icon>
+                <ion-icon name="star"></ion-icon>
+                <ion-icon name="star"></ion-icon>
+                <ion-icon name="star"></ion-icon>
+            </div>
+            <p>R$ 0,00</p>
+          </div>
+
+          <div class="col-4">
+            <img src="assets/img/produto-11.jpg" alt="produto-11">
+            <h4>produto 11</h4>
+            <div class="classificacao">
+                <ion-icon name="star"></ion-icon>
+                <ion-icon name="star"></ion-icon>
+                <ion-icon name="star"></ion-icon>
+                <ion-icon name="star"></ion-icon>
+                <ion-icon name="star"></ion-icon>
+            </div>
+            <p>R$ 0,00</p>
+          </div>
+
+          <div class="col-4">
+            <img src="assets/img/produto-12.jpg" alt="produto-12">
+            <h4>Produto 12</h4>
+            <div class="classificacao">
+                <ion-icon name="star"></ion-icon>
+                <ion-icon name="star"></ion-icon>
+                <ion-icon name="star"></ion-icon>
+                <ion-icon name="star"></ion-icon>
+                <ion-icon name="star"></ion-icon>
+            </div>
+            <p>R$ 0,00</p>
+          </div>
+         
+         <div class="col-4">
+            <img src="assets/img/produto-12.jpg" alt="produto-12">
+            <h4>Produto 12</h4>
+            <div class="classificacao">
+                <ion-icon name="star"></ion-icon>
+                <ion-icon name="star"></ion-icon>
+                <ion-icon name="star"></ion-icon>
+                <ion-icon name="star"></ion-icon>
+                <ion-icon name="star"></ion-icon>
+            </div>
+            <p>R$ 0,00</p>
+          </div>
+         </div>
+         
+
+    
+    <!-- PAGINAÇÃO -->
+    <div class="paginacao">
+        <span>1</span>
+        <span>2</span>
+        <span>3</span>
+        <span>4</span>
+        <span>&#8594;</span>
+    </div>
+</div>
+
+    <!-- INICIO RODAPE -->
+    <footer class="rodape">
+        <div class="container">
+            <div class="linha">
+                <div class="rodape-col-1">
+                    <h3>Baixe o nosso app</h3>
+                    <p>Baixe nosso aplicativo nas melhores plataformas</p>
+                    <div class="app-logo">
+                        <img src="assets/img/google.png" alt="Google Play">
+                        <img src="assets/img/apple.png" alt="App Store">
+                    </div>
+                </div>
+
+                <div class="rodape-col-2">
+                    <img src="assets/img/Body (1).svg" alt="Logo 2">
+                </div>
+
+                <div class="rodape-col-3">
+                    <h3>Mais Informações</h3>
+                    <ul>
+                        <li>Cupons</li>
+                        <li>Blog</li>
+                        <li>Politica de privacidade</li>
+                        <li>Contatos</li>
+                    </ul>
+                </div>
+
+                <div class="rodape-col-4">
+                    <h3>Redes Sociais</h3>
+                    <ul>
+                        <li>Facebook</li>
+                        <li>Instagram</li>
+                        <li>Youtube</li>
+                        <li>Twitter</li>
+                    </ul>
+                </div>
+            </div>
+
+            <hr>
+            <p class="direitos">
+                &#169; Todos os direitos reservados a Vanessa Mariano Gomes
+            </p>
+        </div>
+    </footer>
+    <!-- FIM RODAPE -->
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>
